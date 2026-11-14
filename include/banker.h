@@ -17,7 +17,7 @@ int banker_alloc(struct banker *b, int numCustomers, int numResources);
 void banker_free(struct banker *b);
 
 //leitura
-int read_costumers(struct banker *b, const char *filename, int numResources);
+int read_costomers(struct banker *b, const char *filename, int numResources);
 int validate_commands(const char *filename, int numCustomers,int numResources);
 
 //algoritmo
