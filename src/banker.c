@@ -158,3 +158,58 @@ void request_resources(struct banker *b, int customer, int *request, FILE *out){
         fprintf(out," was denied because result in an unsafe state\n");       
     }
 }
+
+void release_resources(struct banker *b, int customer, int *release, FILE *out){
+    int m = b->numResources;
+    int excede = 0;
+    for(int j = 0 ; j< m; j++){
+        if(release[j] > b->allocation[customer][j]){
+            excede = 1;
+            break;
+        }
+    }
+    if(excede){
+        fprintf(out, "The customer %d release", customer);
+        escreve_antes(out, release, m);
+        fprintf(out, " was denied because exceed its allocation\n");
+        return;
+    }
+    for(int j = 0; j < m; j++){
+        b->available[j] += release[j];
+        b->allocation[customer][j] -= release[j];
+        b->need[customer][j] += release[j];
+    }
+
+    fprintf(out, "Release from customer %d the resources", customer);
+    escreve_antes(out, release, m);
+    fprintf(out,"\n");
+}
+
+void print_state(struct banker *b, FILE *out){
+    int m = b->numResources;
+    int espacos_Max = 10 - m *2;
+    int espacos_Alloc = 12 - m *2;
+
+    fprintf(out,"MAXIMUM   |   ALLOCATION  |   NEED\n");
+
+    for(int i =0; i< b->numCustomers ; i++){
+        escreve_depois(out, b->maximum[i], m);
+        for(int k = 0 ; k  < espacos_Max ; k++){
+            fprintf(out, " ");
+        }
+        fprintf(out, "|   ");
+
+        escreve_depois(out, b->allocation[i], m);
+        for(int k = 0; k< espacos_Alloc;k++){
+            fprintf(out, " ");
+        }
+        fprintf(out,"|   ");
+
+        escreve_depois(out,b->need[i], m);
+        fprintf(out, "\n");     
+    }
+
+    fprintf(out, "AVAILABLE ");
+    escreve_depois(out, b->available, m);
+    fprintf(out, "\n");   
+}
