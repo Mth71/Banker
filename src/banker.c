@@ -57,3 +57,52 @@ void banker_free(struct banker *b){
     b->need = NULL;
     b->allocation = NULL;
 }
+
+static int is_safe(struct banker *b){
+    int n = b->numCustomers;
+    int m =  b->numResources;
+    int *work = malloc(m*sizeof(int));
+    int *finish = calloc(n, sizeof(int));
+    if(work == NULL || finish == NULL){
+        free(work);
+        free(finish);
+        return 0;
+    }
+    for(int j = 0; j < m; j++){
+    work[j] = b->available[j];
+    }
+
+    int achou = 1;
+    while(achou){
+        achou = 0;
+        for(int i =0; i < n; i++){
+            if(finish[i] == 1){
+                continue;
+            }
+            int cabe = 1;
+            for(int j = 0; j<m;j++){
+                if(b->need[i][j] > work[j]){
+                    cabe = 0;
+                    break;
+                }
+            }
+            if(cabe){
+                for(int j = 0; j<m ; j++){
+                    work[j] += b->allocation[i][j];
+                }
+                finish[i]=1;
+                achou = 1;
+            }
+        }
+    }
+    int seguro = 1;
+    for(int i = 0; i < n; i++){
+        if(finish[i] == 0){
+            seguro = 0;
+            break;
+        }
+    }
+    free(work);
+    free(finish);
+    return seguro;
+}
