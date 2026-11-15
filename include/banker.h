@@ -17,12 +17,13 @@ int banker_alloc(struct banker *b, int numCustomers, int numResources);
 void banker_free(struct banker *b);
 
 //leitura
-int read_costomers(struct banker *b, const char *filename, int numResources);
+int read_customers(struct banker *b, const char *filename, int numResources);
 int validate_commands(const char *filename, int numCustomers,int numResources);
+int parse_command(char *line, int numResources, int numCustomers,char *type, int *customer, int *values);
 
 //algoritmo
-void request_resources(struct banker *b, int costomer, int *request, FILE *out);
-void release_resources(struct banker *b, int costomer, int *release, FILE *out);
+void request_resources(struct banker *b, int customer, int *request, FILE *out);
+void release_resources(struct banker *b, int customer, int *release, FILE *out);
 void print_state(struct banker *b, FILE *out);
 
 #endif
