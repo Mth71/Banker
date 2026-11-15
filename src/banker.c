@@ -106,3 +106,55 @@ static int is_safe(struct banker *b){
     free(finish);
     return seguro;
 }
+
+//garante a saida igual ao txt enviado, espacos antes de cada numero
+static void escreve_antes(FILE *out, int *v, int m){
+    for(int j = 0; j<m; j++){
+        fprintf(out, " %d", v[j]);
+    }
+}
+
+//escreve a saida tbm so que com os espacos depois
+static void escreve_depois(FILE *out, int *v, int m){
+    for(int j = 0; j<m; j++){
+        fprintf(out, "%d ", v[j]);
+    }
+}
+
+void request_resources(struct banker *b, int customer, int *request, FILE *out){
+    int m = b->numResources;
+    int excede = 0;
+    for(int j = 0 ; j < m ; j++){
+        if(request[j] > b->need[customer][j]){
+            excede = 1;
+            break;
+        }
+    }
+
+    if(excede){
+        fprintf(out,"The customer %d request", customer);
+        escreve_antes(out, request, m);
+        fprintf(out, " was denied because exceed its maximum allocation\n"); 
+        return; 
+    }
+    for(int j = 0; j < m; j++){
+        b->available[j] -= request[j];
+        b->allocation[customer][j] += request[j];
+        b->need[customer][j] -= request[j];
+    }
+
+    if(is_safe(b)){
+        fprintf(out, "Allocate to customer %d the resources", customer);
+        escreve_antes(out, request, m);
+        fprintf(out, "\n");
+    }else{
+        for(int j = 0; j < m; j++){
+            b->available[j] += request[j];
+            b->allocation[customer][j] -= request[j];
+            b->need[customer][j] += request[j];
+        }
+        fprintf(out,"The customer %d request", customer);
+        escreve_antes(out, request, m);
+        fprintf(out," was denied because result in an unsafe state\n");       
+    }
+}
