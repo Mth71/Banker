@@ -137,6 +137,22 @@ void request_resources(struct banker *b, int customer, int *request, FILE *out){
         fprintf(out, " was denied because exceed its maximum allocation\n"); 
         return; 
     }
+    int falta = 0;
+    for(int j =0; j<m;j++){
+        if(request[j] >b->available[j]){
+            falta = 1;
+            break;
+        }
+    }
+    if(falta){
+        fprintf(out, "The resources ");
+        escreve_depois(out, b->available, m);
+        fprintf(out, "are not enough to customer %d request ", customer);
+        escreve_depois(out, request, m);
+        fprintf(out, "\n");
+        return;
+    }
+
     for(int j = 0; j < m; j++){
         b->available[j] -= request[j];
         b->allocation[customer][j] += request[j];
