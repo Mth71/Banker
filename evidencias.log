@@ -1,0 +1,515 @@
+Script started on 2026-11-14 12:03:55-03:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="150" LINES="28"]
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ date
+[?2004lSat Nov 14 12:03:56 -03 2026
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mwhoami[27mwhoami
+[?2004ltheuz
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mpwd[27mpwd
+[?2004l/home/theuz/impl5/mcr
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mcp /mnt/c/Users/theuz/Downloads/customer.txt .[27m
+[7mcp /mnt/c/Users/theuz/Downloads/commands.txt .[27m
+[7mcp /mnt/c/Users/theuz/Downloads/result.txt result_esperado.txt[27m[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccp /mnt/c/Users/theuz/Downloads/customer.txt .
+cp /mnt/c/Users/theuz/Downloads/commands.txt .
+cp /mnt/c/Users/theuz/Downloads/result.txt result_esperado.txt
+[?2004l[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make 
+[?2004lgcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+/usr/bin/x86_64-linux-gnu-ld.bfd: /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:15: banker] Error 1
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ mae[Kke clean
+[?2004lrm -f banker result.txt
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mgit add .gitignore[27m
+[7mgit commit -m "chore: adiciona .gitignore"[27m
+
+[7mgit add Makefile[27m
+[7mgit commit -m "chore: adiciona Makefile com alvos all, test e clean"[27m
+
+[7mgit add include/banker.h src/[27m
+[7mgit commit -m "feat: adiciona esqueleto dos módulos"[27m
+
+[7mgit push[27m[A[A[A[A[A[A[A[A[A]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ git add .gitignore
+git commit -m "chore: adiciona .gitignore"
+
+git add Makefile
+git commit -m "chore: adiciona Makefile com alvos all, test e clean"
+
+git add include/banker.h src/
+git commit -m "feat: adiciona esqueleto dos módulos"
+
+git push
+[?2004l[main f19ed0b] chore: adiciona .gitignore
+ 1 file changed, 12 insertions(+)
+ create mode 100644 .gitignore
+[main ff4b0c5] chore: adiciona Makefile com alvos all, test e clean
+ 1 file changed, 24 insertions(+)
+ create mode 100644 Makefile
+[main 323fb02] feat: adiciona esqueleto dos módulos
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 include/banker.h
+ create mode 100644 src/banker.c
+ create mode 100644 src/input.c
+ create mode 100644 src/main.c
+Enumerating objects: 12, done.
+Counting objects:   8% (1/12)Counting objects:  16% (2/12)Counting objects:  25% (3/12)Counting objects:  33% (4/12)Counting objects:  41% (5/12)Counting objects:  50% (6/12)Counting objects:  58% (7/12)Counting objects:  66% (8/12)Counting objects:  75% (9/12)Counting objects:  83% (10/12)Counting objects:  91% (11/12)Counting objects: 100% (12/12)Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects:  11% (1/9)Compressing objects:  22% (2/9)Compressing objects:  33% (3/9)Compressing objects:  44% (4/9)Compressing objects:  55% (5/9)Compressing objects:  66% (6/9)Compressing objects:  77% (7/9)Compressing objects:  88% (8/9)Compressing objects: 100% (9/9)Compressing objects: 100% (9/9), done.
+Writing objects:   9% (1/11)Writing objects:  18% (2/11)Writing objects:  27% (3/11)Writing objects:  36% (4/11)Writing objects:  45% (5/11)Writing objects:  54% (6/11)Writing objects:  63% (7/11)Writing objects:  72% (8/11)Writing objects:  81% (9/11)Writing objects:  90% (10/11)Writing objects: 100% (11/11)Writing objects: 100% (11/11), 1.29 KiB | 1.29 MiB/s, done.
+Total 11 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), done.[K
+To https://github.com/Mth71/Banker.git
+   93a712d..323fb02  main -> main
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make 
+[?2004lgcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make cela[K[K[Klean
+[?2004lrm -f banker result.txt
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/implScript started on 2026-11-15 19:01:34-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="218" LINES="12"]
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mdate[27mdate
+[?2004lSun Nov 15 19:01:38 -03 2026
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mwhoami[27mwhoami
+[?2004ltheuz
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mpwd[27mpwd
+[?2004l/home/theuz/impl5/mcr
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ git push
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 802 bytes | 802.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/Mth71/Banker.git
+   a2cbb39..edbbbce  main -> main
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make
+[?2004lgcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+[01m[Ksrc/banker.c:[m[K In function ‘[01m[Kwrite_vector_before[m[K’:
+[01m[Ksrc/banker.c:111:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  111 | static void write_vector_before([01;35m[KFILE *out[m[K, int *v, int m){
+      |                                 [01;35m[K~~~~~~^~~[m[K
+[01m[Ksrc/banker.c:111:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  111 | static void write_vector_before(FILE *out, [01;35m[Kint *v[m[K, int m){
+      |                                            [01;35m[K~~~~~^[m[K
+[01m[Ksrc/banker.c:111:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Km[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  111 | static void write_vector_before(FILE *out, int *v, [01;35m[Kint m[m[K){
+      |                                                    [01;35m[K~~~~^[m[K
+[01m[Ksrc/banker.c:[m[K In function ‘[01m[Kwrite_vector_after[m[K’:
+[01m[Ksrc/banker.c:116:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  116 | static void write_vector_after([01;35m[KFILE *out[m[K, int *v, int m){
+      |                                [01;35m[K~~~~~~^~~[m[K
+[01m[Ksrc/banker.c:116:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  116 | static void write_vector_after(FILE *out, [01;35m[Kint *v[m[K, int m){
+      |                                           [01;35m[K~~~~~^[m[K
+[01m[Ksrc/banker.c:116:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Km[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  116 | static void write_vector_after(FILE *out, int *v, [01;35m[Kint m[m[K){
+      |                                                   [01;35m[K~~~~^[m[K
+[01m[Ksrc/banker.c:[m[K In function ‘[01m[Krequest_resources[m[K’:
+[01m[Ksrc/banker.c:120:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kb[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  120 | void request_resources([01;35m[Kstruct banker *b[m[K, int customer, int *request, FILE *out){
+      |                        [01;35m[K~~~~~~~~~~~~~~~^[m[K
+[01m[Ksrc/banker.c:120:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcustomer[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  120 | void request_resources(struct banker *b, [01;35m[Kint customer[m[K, int *request, FILE *out){
+      |                                          [01;35m[K~~~~^~~~~~~~[m[K
+[01m[Ksrc/banker.c:120:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  120 | void request_resources(struct banker *b, int customer, [01;35m[Kint *request[m[K, FILE *out){
+      |                                                        [01;35m[K~~~~~^~~~~~~[m[K
+[01m[Ksrc/banker.c:120:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  120 | void request_resources(struct banker *b, int customer, int *request, [01;35m[KFILE *out[m[K){
+      |                                                                      [01;35m[K~~~~~~^~~[m[K
+[01m[Ksrc/banker.c:[m[K In function ‘[01m[Krelease_resources[m[K’:
+[01m[Ksrc/banker.c:146:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kb[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  146 | void release_resources([01;35m[Kstruct banker *b[m[K, int customer, int *release, FILE *out){
+      |                        [01;35m[K~~~~~~~~~~~~~~~^[m[K
+[01m[Ksrc/banker.c:146:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcustomer[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  146 | void release_resources(struct banker *b, [01;35m[Kint customer[m[K, int *release, FILE *out){
+      |                                          [01;35m[K~~~~^~~~~~~~[m[K
+[01m[Ksrc/banker.c:146:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krelease[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  146 | void release_resources(struct banker *b, int customer, [01;35m[Kint *release[m[K, FILE *out){
+      |                                                        [01;35m[K~~~~~^~~~~~~[m[K
+[01m[Ksrc/banker.c:146:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  146 | void release_resources(struct banker *b, int customer, int *release, [01;35m[KFILE *out[m[K){
+      |                                                                      [01;35m[K~~~~~~^~~[m[K
+[01m[Ksrc/banker.c:[m[K In function ‘[01m[Kprint_state[m[K’:
+[01m[Ksrc/banker.c:159:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kb[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  159 | void print_state([01;35m[Kstruct banker *b[m[K, FILE *out){
+      |                  [01;35m[K~~~~~~~~~~~~~~~^[m[K
+[01m[Ksrc/banker.c:159:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  159 | void print_state(struct banker *b, [01;35m[KFILE *out[m[K){
+      |                                    [01;35m[K~~~~~~^~~[m[K
+[01m[Ksrc/banker.c:[m[K At top level:
+[01m[Ksrc/banker.c:116:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kwrite_vector_after[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+  116 | static void [01;35m[Kwrite_vector_after[m[K(FILE *out, int *v, int m){
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[Ksrc/banker.c:111:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kwrite_vector_before[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+  111 | static void [01;35m[Kwrite_vector_before[m[K(FILE *out, int *v, int m){
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[Ksrc/banker.c:61:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kis_safe[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+   61 | static int [01;35m[Kis_safe[m[K(struct banker *b){
+      |            [01;35m[K^~~~~~~[m[K
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ git push
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 830 bytes | 830.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/Mth71/Banker.git
+   edbbbce..2f5d050  main -> main
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ git[Kclear
+[?2004l[H[2J[3J[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make clean
+[?2004lrm -f banker result.txt
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ git push
+[?2004lmakEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 917 bytes | 917.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+e remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+     To https://github.com/Mth71/Banker.git
+   2f5d050..97d539d  main -> main
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make 
+[?2004lgcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+[01m[Ksrc/banker.c:118:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kescreve_depois[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+  118 | static void [01;35m[Kescreve_depois[m[K(FILE *out, int *v, int m){
+      |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make lcean[Kca[Klaen[K[K[Kean
+[?2004lrm -f banker result.txt
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make clean[5Pclearmake git push
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 1.03 KiB | 1.03 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/Mth71/Banker.git
+   97d539d..c84ea0a  main -> main
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mmake[27m
+[7mgit add src/banker.c[27m
+[7mgit commit -m "feat: implementa impressão do estado (*)"[27m
+[7mgit push[27m[A[A[A]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make
+git add src/banker.c
+git commit -m "feat: implementa impressão do estado (*)"
+git push
+[?2004lgcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+[main 9e58674] feat: implementa impressão do estado (*)
+ 1 file changed, 26 insertions(+), 17 deletions(-)
+Enumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 662 bytes | 662.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/Mth71/Banker.git
+   c84ea0a..9e58674  main -> main
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mgit reset --soft HEAD~1[27mgit reset --soft HEAD~1
+[?2004l[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mgit reset --soft 97d539d[27m
+[7mgit status[27m[A]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ git reset --soft 97d539d
+git status
+[?2004lOn branch main
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   src/banker.c[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   src/main.c[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mevidencias.log[m
+
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mgit add src/banker.c[27m
+[7mgit commit -m "feat: implementa release_resources e impressão do estado (*)"[27m
+[7mgit push --force-with-lease[27m[A[Agit add src/banker.c
+git commit -m "feat: implementa release_resources e impressão do estado (*)"
+git push --force-with-lease
+[?2004l[main 46b26d6] feat: implementa release_resources e impressão do estado (*)
+ 1 file changed, 46 insertions(+)
+Enumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 1.05 KiB | 1.05 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/Mth71/Banker.git
+ + 9e58674...46b26d6 main -> main (forced update)
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mgit checkout 9e58674 -- src/banker.c[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit checkout 9e58674 -- src/banker.c
+[?2004l[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mgrep -c "Formato exato" src/banker.c[27m
+[7mgrep -n "espacos_Max" src/banker.c[27m
+[7mmake[27m[A[A]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ grep -c "Formato exato" src/banker.c
+grep -n "espacos_Max" src/banker.c
+make
+[?2004l0
+[32m[K190[m[K[36m[K:[m[K    int [01;31m[Kespacos_Max[m[K = 10 - m *2;
+[32m[K197[m[K[36m[K:[m[K        for(int k = 0 ; k  < [01;31m[Kespacos_Max[m[K ; k++){
+gcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mgit add src/banker.c[27m
+[7mgit commit --amend --no-edit[27m
+[7mgit push --force-with-lease[27m[A[Agit add src/banker.c
+git commit --amend --no-edit
+git push --force-with-lease
+[?2004l[main 729ca7d] feat: implementa release_resources e impressão do estado (*)
+ Date: Sun Nov 15 20:26:32 2026 -0300
+ 1 file changed, 55 insertions(+)
+Enumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 869 bytes | 869.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/Mth71/Banker.git
+ + 46b26d6...729ca7d main -> main (forced update)
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mmake[27m
+[7mgit add include/banker.h[27m
+[7mgit commit -m "fix: corrige nomes em banker.h e adiciona parse_command"[27m[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake
+git add include/banker.h
+git commit -m "fix: corrige nomes em banker.h e adiciona parse_command"
+[?2004lgcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+[main 71d9c04] fix: corrige nomes em banker.h e adiciona parse_command
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ git push
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 455 bytes | 455.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/Mth71/Banker.git
+   729ca7d..71d9c04  main -> main
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make celan[Kclean
+[?2004lrm -f banker result.txt
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make 
+[?2004lgcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ hgi[K[K[Kgit push
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 1.41 KiB | 1.42 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/Mth71/Banker.git
+   71d9c04..d86c4eb  main -> main
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make
+[?2004lgcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mgit add src/input.c[27m
+[7mgit commit -m "feat: implementa leitura e validação do commands.txt"[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add src/input.c
+git commit -m "feat: implementa leitura e validação do commands.txt"
+[?2004l[main 762e3fe] feat: implementa leitura e validação do commands.txt
+ 1 file changed, 94 insertions(+)
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ git push
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 1.00 KiB | 1.00 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/Mth71/Banker.git
+   d86c4eb..762e3fe  main -> main
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mmake[27m
+[7mmake test[27m[A]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make
+make test
+[?2004lgcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+[01m[Ksrc/main.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Ksrc/main.c:18:12:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kparse_nonneg_int[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   18 |         if([01;31m[Kparse_nonneg_int[m[K(argv[i], &total[i-1]) != 0){
+      |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[Ksrc/main.c:60:9:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kstrip_newline[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   60 |         [01;31m[Kstrip_newline[m[K(line);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[Ksrc/main.c:61:12:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kis_blank[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   61 |         if([01;31m[Kis_blank[m[K(line)) continue;
+      |            [01;31m[K^~~~~~~~[m[K
+make: *** [Makefile:15: banker] Error 1
+gcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+[01m[Ksrc/main.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Ksrc/main.c:18:12:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kparse_nonneg_int[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   18 |         if([01;31m[Kparse_nonneg_int[m[K(argv[i], &total[i-1]) != 0){
+      |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[Ksrc/main.c:60:9:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kstrip_newline[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   60 |         [01;31m[Kstrip_newline[m[K(line);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[Ksrc/main.c:61:12:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kis_blank[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   61 |         if([01;31m[Kis_blank[m[K(line)) continue;
+      |            [01;31m[K^~~~~~~~[m[K
+make: *** [Makefile:15: banker] Error 1
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ clearmake test[K test[K
+[?2004lgcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+[01m[Ksrc/main.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Ksrc/main.c:18:12:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kparse_nonneg_int[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   18 |         if([01;31m[Kparse_nonneg_int[m[K(argv[i], &total[i-1]) != 0){
+      |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[Ksrc/main.c:60:9:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kstrip_newline[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   60 |         [01;31m[Kstrip_newline[m[K(line);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[Ksrc/main.c:61:12:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kis_blank[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   61 |         if([01;31m[Kis_blank[m[K(line)) continue;
+      |            [01;31m[K^~~~~~~~[m[K
+make: *** [Makefile:15: banker] Error 1
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make
+[?2004lgcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make test
+[?2004l./banker 10 5 7
+diff -u result_esperado.txt result.txt
+--- result_esperado.txt	2026-11-14 12:04:51.099460294 -0300
++++ result.txt	2026-11-15 22:31:42.908407963 -0300
+@@ -11,7 +11,7 @@
+ 2 2 2     |   2 1 1       |   0 1 1 
+ 4 3 3     |   0 0 2       |   4 3 1 
+ AVAILABLE 3 3 2 
+-The resources 3 3 2 are not enough to customer 4 request 4 0 0 
++The customer 4 request 4 0 0 was denied because result in an unsafe state
+ Allocate to customer 1 the resources 1 0 2
+ The customer 0 request 0 2 0 was denied because result in an unsafe state
+ The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+make: *** [Makefile:19: test] Error 1
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mgit add src/main.c src/input.c include/banker.h[27m
+[7mgit commit -m "feat: implementa main com validação e execução dos comandos"[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add src/main.c src/input.c include/banker.h
+git commit -m "feat: implementa main com validação e execução dos comandos"
+[?2004l[main 5e10d41] feat: implementa main com validação e execução dos comandos
+ 3 files changed, 80 insertions(+), 4 deletions(-)
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ git push
+[?2004lEnumerating objects: 13, done.
+Counting objects:   7% (1/13)Counting objects:  15% (2/13)Counting objects:  23% (3/13)Counting objects:  30% (4/13)Counting objects:  38% (5/13)Counting objects:  46% (6/13)Counting objects:  53% (7/13)Counting objects:  61% (8/13)Counting objects:  69% (9/13)Counting objects:  76% (10/13)Counting objects:  84% (11/13)Counting objects:  92% (12/13)Counting objects: 100% (13/13)Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 1.43 KiB | 1.43 MiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/Mth71/Banker.git
+   762e3fe..5e10d41  main -> main
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make lce[K[K[Kclean
+[?2004lrm -f banker result.txt
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make test
+[?2004lgcc -Wall -Iinclude -Wextra -o banker src/banker.c src/input.c src/main.c
+./banker 10 5 7
+diff -u result_esperado.txt result.txt
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mcat result.txt[27mcat result.txt
+[?2004lAllocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM   |   ALLOCATION  |   NEED
+7 5 3     |   0 1 0       |   7 4 3 
+3 2 2     |   2 0 0       |   1 2 2 
+9 0 2     |   3 0 2       |   6 0 0 
+2 2 2     |   2 1 1       |   0 1 1 
+4 3 3     |   0 0 2       |   4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ clearat result.txt[5Pmake tes[Cclean[2Pgit pushmake clean[1Ptest
+[?2004l./banker 10 5 7
+diff -u result_esperado.txt result.txt
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ make test[4Pclearat result.txt
+[?2004lAllocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM   |   ALLOCATION  |   NEED
+7 5 3     |   0 1 0       |   7 4 3 
+3 2 2     |   2 0 0       |   1 2 2 
+9 0 2     |   3 0 2       |   6 0 0 
+2 2 2     |   2 1 1       |   0 1 1 
+4 3 3     |   0 0 2       |   4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [7mgit add src/banker.c[27m
+[7mgit commit -m "fix: adiciona verificação de recursos disponíveis no request_resources"[27m
+[7mgit push[27m[A[A]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ git add src/banker.c
+git commit -m "fix: adiciona verificação de recursos disponíveis no request_resources"
+git push
+[?2004l[main 7fd3ec2] fix: adiciona verificação de recursos disponíveis no request_resources
+ 1 file changed, 16 insertions(+)
+Enumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 600 bytes | 600.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/Mth71/Banker.git
+   5e10d41..7fd3ec2  main -> main
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [H[2J]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ mkdir -p testes && cd testes
+cp ../customer.txt ../commands.txt .
+
+# 1. sem argumentos
+../banker
+
+# 2. argumento que não é número
+../banker 10 x 7
+
+# 3. quantidade de argumentos diferente dos arquivos
+../banker 10 5
+../banker 10 5 7 1
+
+# 4. customer.txt ausente
+mv customer.txt c.bak; ../banker 10 5 7; mv c.bak customer.txt
+
+# 5. commands.txt ausente
+[7mmv commands.txt k.bak; ../banker 10 5 7; mv k.bak commands.txt[27m
+
+[7m# 6. formato inválido no customer.txt[27m
+[7mcp customer.txt c.bak; printf '7,5,a\n' > customer.txt; ../banker 10 5 7; mv c.bak customer.txt[27m
+
+[7m# 7. formato inválido no commands.txt (comando desconhecido e cliente inexistente)[27m
+[7mcp commands.txt k.bak[27m
+[7mprintf 'XX 0 1 1 1\n' > commands.txt; ../banker 10 5 7[27m
+[7mprintf 'RQ 9 1 1 1\n' > commands.txt; ../banker 10 5 7[27m
+[7mmv k.bak commands.txt[27m
+
+[7mcd ..[27m[A[A[A[A[A[A[A[A[A[A[Amv commands.txt k.bak; ../banker 10 5 7; mv k.bak commands.txt
+
+# 6. formato inválido no customer.txt
+cp customer.txt c.bak; printf '7,5,a\n' > customer.txt; ../banker 10 5 7; mv c.bak customer.txt
+
+# 7. formato inválido no commands.txt (comando desconhecido e cliente inexistente)
+cp commands.txt k.bak
+printf 'XX 0 1 1 1\n' > commands.txt; ../banker 10 5 7
+printf 'RQ 9 1 1 1\n' > commands.txt; ../banker 10 5 7
+mv k.bak commands.txt
+
+cd ..
+[?2004lUso: ../banker <instâncias do recurso 0> <recurso 1>
+Erro: Argumento Inválido (x)
+Erro: customer.txt linha 1 tem quantidade de recursos diferente dos argumentos (2)
+Erro: customer.txt linha 1 tem quantidade de recursos diferente dos argumentos (4)
+Erro: não foi possível abrir customer.txt
+Erro: Não foi possivel abrir o arquivo commands.txt
+Erro: customer.txt linha 1 em formato inválido
+Erro: commands.txt linha 1 em formato inválido
+Erro: commands.txt linha 1 em formato inválido
+[?2004h]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ [K]0;theuz@Mth7: ~/impl5/mcr[01;32mtheuz@Mth7[00m:[01;34m~/impl5/mcr[00m$ exit
+[?2004lexit
+
+Script done on 2026-11-15 22:43:39-03:00 [COMMAND_EXIT_CODE="0"]
