@@ -122,3 +122,97 @@ int read_customers(struct banker *b, const char *filename, int numResources){
     fclose(f);
     return 0;
 }
+
+int parse_command(char *line, int numResources, int numCustomers,char *type, int *customer, int *values){
+    char *tok = strtok(line, " \t");
+    if(tok == NULL){
+     return -1;
+    }
+        
+
+    if(strcmp(tok, "*") == 0){
+        if(strtok(NULL, " \t") != NULL) return -1;
+        *type = '*';
+        return 0;
+    }
+
+    //RQ ou RL
+    if(strcmp(tok, "RQ") == 0){
+        *type = 'Q';
+    } 
+    else if(strcmp(tok, "RL") == 0){
+        *type = 'L';
+    } 
+    else return -1;                 
+
+    //cliente
+    tok = strtok(NULL, " \t");
+    if(tok == NULL || parse_nonneg_int(tok, customer) != 0){
+        return -1;
+    } 
+    if(*customer >= numCustomers){ //cliente nao existe
+        return -1; 
+    } 
+
+    // recursos
+    int j = 0;
+    tok = strtok(NULL, " \t");
+    while(tok != NULL){
+        if(j == numResources){
+            return -2;
+        }
+        if(parse_nonneg_int(tok, &values[j]) != 0){
+            return -1;
+        }
+        j++;
+        tok = strtok(NULL, " \t");
+    }
+    if(j < numResources){
+        return -2;
+    }
+    return 0;
+}
+
+int validate_commands(const char *filename, int numCustomers, int numResources){
+    FILE *f = fopen(filename, "r");
+    if(f == NULL){ 
+        fprintf(stderr, "Erro: Não foi possivel abrir o arquivo %s\n", filename);
+        return -1;
+     }                      
+
+    int *values = malloc(numResources*sizeof(int));
+    if(values == NULL){
+        fprintf(stderr, "Erro: Memória insuficiente\n");
+        fclose(f);
+        return -1;
+    }
+
+    char line[LINE_MAX_LEN];
+    int lineno = 0;
+    char type;
+    int customer;
+
+    while(fgets(line, sizeof line, f) != NULL){
+        lineno++;
+        strip_newline(line);
+        if(is_blank(line)) continue;
+
+        int r = parse_command(line, numResources, numCustomers, &type, &customer, values);
+        if(r == -2){
+            fprintf(stderr, "Erro: %s linha %d tem quantidade de recursos diferente dos argumentos (%d)\n", filename , lineno, numResources);
+            free(values);
+            fclose(f);
+            return -1;
+        }
+        if(r == -1){
+            fprintf(stderr, "Erro: %s linha %d em formato inválido\n", filename, lineno);
+            free(values);
+            fclose(f);
+            return -1;
+        }   
+    }
+
+    free(values);
+    fclose(f);
+    return 0;
+}
