@@ -7,15 +7,14 @@
 
 #define LINE_MAX_LEN 1024
 
-
-static void strip_newline(char *s){
+void strip_newline(char *s){
     size_t tamanho = strlen(s);
     while(tamanho > 0 && (s[tamanho - 1] == '\n' || s[tamanho - 1] == '\r')){
         s[tamanho - 1] = '\0';
         tamanho--;
     }
 }
-static int is_blank(const char *s){
+int is_blank(const char *s){
     for(int i = 0 ; s[i] != '\0'; i++){
         if(!(isspace((unsigned char)s[i]))){
             return 0;
@@ -24,7 +23,7 @@ static int is_blank(const char *s){
     return 1;
 }
 
-static int parse_nonneg_int(const char *tok, int *out){
+int parse_nonneg_int(const char *tok, int *out){
     char *end;
     long v = strtol(tok, &end, 10);
     if(end == tok || *end != '\0' || v < 0 || v> INT_MAX){

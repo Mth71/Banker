@@ -20,6 +20,9 @@ void banker_free(struct banker *b);
 int read_customers(struct banker *b, const char *filename, int numResources);
 int validate_commands(const char *filename, int numCustomers,int numResources);
 int parse_command(char *line, int numResources, int numCustomers,char *type, int *customer, int *values);
+void strip_newline(char *s);
+int is_blank(const char *s);
+int parse_nonneg_int(const char *tok, int *out);
 
 //algoritmo
 void request_resources(struct banker *b, int customer, int *request, FILE *out);
